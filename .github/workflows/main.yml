@@ -25,7 +25,19 @@ jobs:
         - name: Build with Maven
           working-directory: MyWebApp
           run: mvn clean package
-          
+
+        - name: Upload WAR artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: MyWebApp-WAR
+            path: MyWebApp/target/*.war
+
+
+
+
+
+
+            
 
 
 
