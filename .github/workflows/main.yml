@@ -16,7 +16,7 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v7
           
-        - name: Set up Java
+        - name: set up java
           uses: actions/setup-java@v6
           with:
             java-version: '25'
